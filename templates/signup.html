@@ -1,0 +1,40 @@
+<html>
+<style>
+    .error{
+    color: red;
+
+    }
+    
+
+</style>
+    <body>
+<h1>Signup</h1>
+<form method="POST" action="/register">
+<label for="name">Username</label>
+
+<input type="text" id="username" value='{{username}}' name="username" required
+       minlength="4" maxlength="50" size="25">
+       <span class="error">{{username_error}}</span>
+<br>
+<label for="name">Password</label>
+
+<input type="text" id="password"  name="password" required
+       minlength="4" maxlength="50" size="20">
+       <span class="error">{{password_error}}</span>
+<br>       
+<label for="name"><label for="name">Verify Password</label>
+
+<input type="text" id="verifypassword" name="verifypassword" required
+       minlength="4" maxlength="50" size="20"Password</label>
+       <span class="error">{{verifypassword_error}}</span>
+
+<br>
+<label for="name"><label for="name">Email (optional)</label>
+<input type="email" id="email" name="email" value='{{email}}' required
+      minlength="4" maxlength="50" size="20">
+      <span class="error">{{email_error}}</span>
+<br>    
+<input type="submit">
+    </body>
+</form>
+</html>
